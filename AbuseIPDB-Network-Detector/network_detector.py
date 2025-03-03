@@ -3,7 +3,7 @@ import subprocess
 import requests
 
 # Replace with your actual AbuseIPDB API key
-ABUSEIPDB_API_KEY = "YOUR API KEY" # <<< ENTER YOUR API KEY HERE
+ABUSEIPDB_API_KEY = "YOUR_API_KEY" # <<< Enter Your API Here
 
 def check_ip_abuse(ip):
     """
@@ -79,6 +79,9 @@ def main():
 
     flagged_connections = []
     for ip, process in connections:
+        # Exclude local IP address 127.0.0.1 from queries.
+        if ip == "127.0.0.1":
+            continue
         print(f"Checking IP: {ip}")
         abuse_confidence, details = check_ip_abuse(ip)
         # Define a threshold: e.g., if abuse confidence score > 50, consider the IP suspicious.
