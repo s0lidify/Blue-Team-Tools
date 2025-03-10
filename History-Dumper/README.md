@@ -10,5 +10,5 @@ Creates a directory `history` with command history for each user
 ### Windows
 Creates a directory `history` with command history for each user
 
-`.\history_win.ps1 -OutputDir "C:\history"`
-`python history_win.py -o "C:\history"`
+1. `.\history_win.ps1 -OutputDir "C:\history"`
+2. `python history_win.py -o "C:\history"`
