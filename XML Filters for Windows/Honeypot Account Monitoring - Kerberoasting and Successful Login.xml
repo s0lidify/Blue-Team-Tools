@@ -6,7 +6,7 @@
 <QueryList>
   <Query Id="0" Path="Security">
     <Select Path="Security">
-      (*[System[EventID='4771']] or (*[System[EventID='4624']] and *[EventData[Data[@Name='TargetUserName'] = 'wms2']]))
+      (*[System[EventID='4771']] or (*[System[EventID='4624']] and *[EventData[Data[@Name='TargetUserName'] = 'username']]))
     </Select>
   </Query>
 </QueryList>
