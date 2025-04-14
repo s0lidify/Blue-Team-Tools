@@ -1,0 +1,12 @@
+# Detecting suspicious activity such as Kerberoasting attacks and unauthorized logins by using canary tokens
+# The token needs to be integrated as an action followed by the triger in scheduled tasks
+# Different tokens can be used, in this example DNS token was used for safety concerns.
+# It is recommended to schedule tasks on the DC
+
+<QueryList>
+  <Query Id="0" Path="Security">
+    <Select Path="Security">
+      (*[System[EventID='4771']] or (*[System[EventID='4624']] and *[EventData[Data[@Name='TargetUserName'] = 'wms2']]))
+    </Select>
+  </Query>
+</QueryList>
