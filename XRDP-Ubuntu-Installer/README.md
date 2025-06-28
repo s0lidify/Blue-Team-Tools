@@ -6,6 +6,8 @@ Some apps will not boot due to conflict in settings
 
 `export XAUTHORITY=~/.Xauthority`
 
-`xauth generate :10 . trusted`
+`xauth generate :10 . trusted` *
 
 `firefox`
+
+* The actual number will vary depending on the machine settings
