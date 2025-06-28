@@ -10,4 +10,4 @@ Some apps will not boot due to conflict in settings
 
 `firefox`
 
-* The actual number will vary depending on the machine settings
+** The actual number will vary depending on the machine settings
