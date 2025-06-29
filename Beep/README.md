@@ -7,3 +7,7 @@ Beep can be customized used for various purposes
 ## Usage 
 
 `bash beep.sh`
+
+## Add to PATH
+
+`sudo mv beep.sh /usr/bin/beep; chmod 777 /usr/bin/beep`
